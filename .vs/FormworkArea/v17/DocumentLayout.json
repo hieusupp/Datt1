@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\Desktop\\DATT_hieu77164\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BCE69769-3B49-4D40-8BA0-FD6C56788F5E}|FormworkArea\\FormworkArea.csproj|c:\\users\\lenovo\\desktop\\datt_hieu77164\\formworkarea\\formworkareaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCE69769-3B49-4D40-8BA0-FD6C56788F5E}|FormworkArea\\FormworkArea.csproj|solutionrelative:formworkarea\\formworkareaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCE69769-3B49-4D40-8BA0-FD6C56788F5E}|FormworkArea\\FormworkArea.csproj|C:\\Users\\LENOVO\\Desktop\\DATT_hieu77164\\formworkarea\\formworkareawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCE69769-3B49-4D40-8BA0-FD6C56788F5E}|FormworkArea\\FormworkArea.csproj|solutionrelative:formworkarea\\formworkareawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCE69769-3B49-4D40-8BA0-FD6C56788F5E}|FormworkArea\\FormworkArea.csproj|C:\\Users\\LENOVO\\Desktop\\DATT_hieu77164\\formworkarea\\formworkareacmd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCE69769-3B49-4D40-8BA0-FD6C56788F5E}|FormworkArea\\FormworkArea.csproj|solutionrelative:formworkarea\\formworkareacmd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormworkAreaWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\DATT_hieu77164\\FormworkArea\\FormworkAreaWindow.xaml.cs",
+              "RelativeDocumentMoniker": "FormworkArea\\FormworkAreaWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\DATT_hieu77164\\FormworkArea\\FormworkAreaWindow.xaml.cs",
+              "RelativeToolTip": "FormworkArea\\FormworkAreaWindow.xaml.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwCgAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T23:44:17.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormworkAreaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\DATT_hieu77164\\FormworkArea\\FormworkAreaViewModel.cs",
+              "RelativeDocumentMoniker": "FormworkArea\\FormworkAreaViewModel.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\DATT_hieu77164\\FormworkArea\\FormworkAreaViewModel.cs",
+              "RelativeToolTip": "FormworkArea\\FormworkAreaViewModel.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAiwFQAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T22:27:55.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormworkAreaCmd.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\DATT_hieu77164\\FormworkArea\\FormworkAreaCmd.cs",
+              "RelativeDocumentMoniker": "FormworkArea\\FormworkAreaCmd.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\DATT_hieu77164\\FormworkArea\\FormworkAreaCmd.cs",
+              "RelativeToolTip": "FormworkArea\\FormworkAreaCmd.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T22:27:54.023Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

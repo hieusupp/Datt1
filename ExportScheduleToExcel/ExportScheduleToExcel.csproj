@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{16FFD04E-3C05-4F62-88EE-3129CDF9C038}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AlphaBIM</RootNamespace>
+    <AssemblyName>ExportScheduleToExcel</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProgramW6432)\Autodesk\Revit 2021\Revit.exe</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProgramW6432)\Autodesk\Revit 2021\Revit.exe</StartProgram>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ControlzEx">
+      <HintPath>D:\Revit API edu\Alpha BIM_Revit API Training - Source Code_15 Lessons\dllReference\ControlzEx.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>D:\Revit API edu\Alpha BIM_Revit API Training - Source Code_15 Lessons\dllReference\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro.ALB">
+      <HintPath>D:\Revit API edu\Alpha BIM_Revit API Training - Source Code_15 Lessons\dllReference\MahApps.Metro.ALB.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro.IconPacks">
+      <HintPath>D:\Revit API edu\Alpha BIM_Revit API Training - Source Code_15 Lessons\dllReference\MahApps.Metro.IconPacks.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors.ALB">
+      <HintPath>D:\Revit API edu\Alpha BIM_Revit API Training - Source Code_15 Lessons\dllReference\MaterialDesignColors.ALB.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf.ALB">
+      <HintPath>D:\Revit API edu\Alpha BIM_Revit API Training - Source Code_15 Lessons\dllReference\MaterialDesignThemes.Wpf.ALB.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>D:\Revit API edu\Alpha BIM_Revit API Training - Source Code_15 Lessons\dllReference\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack">
+      <HintPath>D:\Revit API edu\Alpha BIM_Revit API Training - Source Code_15 Lessons\dllReference\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
+      <HintPath>D:\Revit API edu\Alpha BIM_Revit API Training - Source Code_15 Lessons\dllReference\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Revit API edu\Alpha BIM_Revit API Training - Source Code_15 Lessons\dllReference\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenXmlPowerTools, Version=4.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenXmlPowerTools.4.5.3.2\lib\net45\OpenXmlPowerTools.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="AlphaBIMWPF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Revit API edu\Alpha BIM_Revit API Training - Source Code_15 Lessons\dllReference\AlphaBIMWPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors">
+      <HintPath>D:\Revit API edu\Alpha BIM_Revit API Training - Source Code_15 Lessons\dllReference\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2021\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2021\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.4.0.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Management.Automation.dll.10.0.10586.0\lib\net40\System.Management.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>D:\Revit API edu\Alpha BIM_Revit API Training - Source Code_15 Lessons\dllReference\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Management" />
+    <Reference Include="Xceed.Wpf.Toolkit">
+      <HintPath>D:\Revit API edu\Alpha BIM_Revit API Training - Source Code_15 Lessons\dllReference\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExportScheduleToExcelCmd.cs" />
+    <Compile Include="ExportScheduleToExcelViewModel.cs" />
+    <Compile Include="ExportScheduleToExcelWindow.xaml.cs">
+      <DependentUpon>ExportScheduleToExcelWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lib\AlphaBIMConstraint.cs" />
+    <Compile Include="Lib\AlphaBIMUnitUtils.cs" />
+    <Compile Include="Lib\AlphaComparer.cs" />
+    <Compile Include="Lib\AssemblyLoader.cs" />
+    <Compile Include="Lib\CadUtils.cs" />
+    <Compile Include="Lib\ChonDoiTuong.cs" />
+    <Compile Include="Lib\CurveUtils.cs" />
+    <Compile Include="Lib\DeleteWarningSuper.cs" />
+    <Compile Include="Lib\DocumentUtils.cs" />
+    <Compile Include="Lib\ElementSelector.cs" />
+    <Compile Include="Lib\EqualityComparer.cs" />
+    <Compile Include="Lib\ExcelUtils.cs" />
+    <Compile Include="Lib\FamilySymbolUtils.cs" />
+    <Compile Include="Lib\FilterExtension.cs" />
+    <Compile Include="Lib\GeneralUtils.cs" />
+    <Compile Include="Lib\GeometryUtils.cs" />
+    <Compile Include="Lib\IEqualityComparerCategory.cs" />
+    <Compile Include="Lib\ImportInstanceSelectionFilter.cs" />
+    <Compile Include="Lib\ParameterUtils.cs" />
+    <Compile Include="Lib\PlanarFaceSelectionFilter.cs" />
+    <Compile Include="Lib\SettingRepository.cs" />
+    <Compile Include="Lib\SlabFoundationFilter.cs" />
+    <Compile Include="Lib\SolidUtils.cs" />
+    <Compile Include="Lib\ViewExtension.cs" />
+    <Compile Include="Lib\ViewScheduleExtension.cs" />
+    <Compile Include="Lib\ViewScheduleUtils.cs" />
+    <Compile Include="Lib\ViewUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ExportScheduleToExcelWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
